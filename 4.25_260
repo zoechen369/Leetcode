@@ -13,13 +13,16 @@ class Solution
 public:
     vector<int> singleNumber(vector<int>& nums) 
     {
+       // xor all numbers 
+       //int diff = accumulate(nums.begin(), nums.end(), 0, bit_xor<int>());
+       for (int i = 1; i< nums.size(); i++){
+           diff ^= nums[i];
+       }    
+       //find the last set bit
+       diff &= -diff;
         
-        int diff = accumulate(nums.begin(), nums.end(), 0, bit_xor<int>());
-        
-        diff &= -diff;
-        
-        vector<int> x = {0, 0}; 
-        for (int i : nums)
+       vector<int> x = {0, 0}; 
+       for (int i : nums)
         {
             if ((i & diff) == 0) 
             {
