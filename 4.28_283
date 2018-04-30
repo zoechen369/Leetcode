@@ -9,7 +9,9 @@ Minimize the total number of operations.
 
 Solution:
 Notes:
-For default
+For first default
+Double pointer
+
 Implementation:
 class Solution {
 public:
