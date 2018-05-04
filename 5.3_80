@@ -15,7 +15,7 @@ Your function should return length = 7, with the first seven elements of nums be
 It doesn't matter what values are set beyond the returned length.
 
 Solution:
-Note: set a guard
+Note: set a guard, Two adjacent Numbers are same
 Implementation:
 class Solution {
 public:
