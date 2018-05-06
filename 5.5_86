@@ -31,8 +31,8 @@ public:
         for(ListNode *p = head; p; p = p->next)
             if(p->val < x)
             {
-                l->next = p;
-                l = p;
+                l->next = p;//pointer
+                l = p;//value
             }
         else{
             r->next = p;
