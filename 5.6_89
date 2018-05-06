@@ -18,6 +18,7 @@ For now, the judge is able to judge based on one instance of gray code sequence.
 Solution:
 Note:
 G(i)=i^(i/2)
+O(n)
 Implementation:
 class Solution {
 public:
